@@ -1,0 +1,10 @@
+version : '3'
+
+services:
+  elm_service:
+    image: usaturn/elm:latest
+    environment:
+      - SHELL=/bin/bash
+    entrypoint: /bin/bash -c "npm run watch"
+    volumes:
+      - ~/elm-kata:/wdir

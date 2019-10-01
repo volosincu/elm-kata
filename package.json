@@ -1,0 +1,14 @@
+{
+  "name": "elm-kata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/volosincu/elm-kata.git",
+  "author": "mihai bogdan volosincu <bogdan.volosincu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar-cli": "^2.0.0"
+  },
+  "scripts": {
+    "watch": "chokidar '**/*.elm' -c 'elm make src/Main.elm --output elm.js' --initial"
+  }
+}
